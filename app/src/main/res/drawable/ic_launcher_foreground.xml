@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Top compression chevron (White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 36,25 L 54,37 L 72,25 L 68,21 L 54,30 L 40,21 Z" />
+
+    <!-- Center Image/Photo Canvas (White Frame) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 36,38 h 36 c 2.2,0 4,1.8 4,4 v 24 c 0,2.2 -1.8,4 -4,4 H 36 c -2.2,0 -4,-1.8 -4,-4 v -24 c 0,-2.2 1.8,-4 4,-4 z" />
+
+    <!-- Inside the image canvas: Mountains in negative space / vibrant blue accent -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M 36,68 L 47,53 L 55,63 L 63,55 L 72,68 Z" />
+
+    <!-- Inside the image canvas: Sun in vibrant blue accent -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M 44,44 m -3,0 a 3,3 0 1,1 6,0 a 3,3 0 1,1 -6,0" />
+
+    <!-- Bottom compression chevron (White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 36,83 L 54,71 L 72,83 L 68,87 L 54,78 L 40,87 Z" />
+
+</vector>

@@ -1,0 +1,6 @@
+{
+  "name": "AlphaPics AI",
+  "description": "A premium AI-first photo experience with production image-compression utilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,134 @@
+{
+  "runId": "alphapics-photo-editor-redesign-2026-08-27",
+  "fileKey": "h8YBl8puzyO5ly0hkrpIG5",
+  "fileUrl": "https://www.figma.com/design/h8YBl8puzyO5ly0hkrpIG5",
+  "phase": "phase0",
+  "step": "approval_checkpoint",
+  "entities": {
+    "collections": {},
+    "variables": {},
+    "styles": {},
+    "pages": {},
+    "components": {},
+    "screens": {}
+  },
+  "pendingValidations": [
+    "Obtain the required Phase 0 approval before any Figma mutations or Android UI edits.",
+    "Use the already-selected Figma desktop application path while the Starter-plan MCP quota is unavailable, or resume MCP writes if quota access returns.",
+    "Visually validate every page, component family, key state, and prototype connection after creation.",
+    "Do not start Compose implementation until the complete Figma screen set passes the self-review gate."
+  ],
+  "completedSteps": [
+    "P0.a: Audited official Google Play pages and official visual evidence for UpFoto, Remini, PhotoRoom, and B612.",
+    "P0.b: Audited current Compose navigation, AlphaPics screens, compressor, Batch, History, ads, daily tokens, Room, tests, application identity, and screenshot coverage.",
+    "P0.c: Created and inspected the dedicated empty Figma file; confirmed no existing local variables, styles, components, or frames conflict with the redesign.",
+    "P0.d: Discovered the subscribed Material 3 Design Kit and identified compatible primitive components for selective reuse.",
+    "P0.e: Locked the v1 foundations, component families, screen/state inventory, prototype flows, and code-to-design boundaries.",
+    "P0.f: Established a successful pre-design Kotlin compile baseline with no production source changes."
+  ],
+  "lockedPlan": {
+    "researchSynthesis": {
+      "UpFoto": "Photo-selection simplicity, immediate enhancement entry, restrained controls, and clear Before/After proof.",
+      "Remini": "Result-first enhancement workspace with a dominant image canvas, one-tap processing, and progressive enhancement categories.",
+      "PhotoRoom": "Contextual editor organization, explicit export, cutout correction, and a separate multi-photo Batch workspace.",
+      "B612": "Compact bottom tool rail, sliders, thumbnail strips, selected states, and cancel/apply ergonomics.",
+      "AlphaPics": "Original dark photo-centric synthesis; no copied assets, proprietary presets, wording, branding, or pixel layouts."
+    },
+    "foundations": {
+      "variableCollections": [
+        "Primitives / Default",
+        "Semantic Color / Dark",
+        "Spacing / Default",
+        "Radius / Default",
+        "Sizing / Default"
+      ],
+      "colorSource": "Match the existing AlphaPicsTheme Compose tokens: deep black/navy surfaces, electric blue, restrained violet/cyan, semantic text, border, success, warning, and danger.",
+      "typography": [
+        "Roboto Display / 34 / Black / 38",
+        "Roboto Heading / 26 / ExtraBold / 31",
+        "Roboto Title Large / 21 / Bold / 26",
+        "Roboto Title / 16 / Bold / 21",
+        "Roboto Body Large / 16 / Regular / 24",
+        "Roboto Body / 14 / Regular / 20",
+        "Roboto Label / 14 / Bold / 18",
+        "Roboto Micro / 10 / ExtraBold / 14"
+      ],
+      "spacingDp": [4, 8, 12, 16, 18, 24, 32, 40],
+      "radiusDp": [10, 16, 22, 28, 100],
+      "sizingDp": [16, 20, 24, 32, 44, 48],
+      "gridsAndSafeAreas": "412 x 915 primary Android frame plus 360 x 800 compact checks; 18 dp horizontal content margin; explicit status, navigation, keyboard, and ad-safe zones.",
+      "effects": "Subtle elevation, canvas scrim, selected-tool glow, and focus treatment only; no pervasive blur or glow."
+    },
+    "pages": [
+      "00 Cover",
+      "01 Getting Started",
+      "02 Foundations",
+      "---",
+      "03 Components",
+      "---",
+      "04 Product Screens",
+      "05 Utilities",
+      "06 States & Prototype"
+    ],
+    "componentFamilies": [
+      "App top bar and settings action",
+      "Primary, secondary, tertiary, and icon actions",
+      "Photo picker and selected-photo surface",
+      "Image canvas, canvas overlays, zoom-ready chrome, and Before/After control",
+      "Enhancement and editor tool rails with selected, pressed, disabled, and unavailable states",
+      "Tool item, adjustment slider, value indicator, reset action, and contextual bottom sheet",
+      "Feature shortcut and quick utility card",
+      "Result toolbar, save/export action, share action, and status chip",
+      "Empty, loading, processing, success, error, retry, and honest Coming Soon states",
+      "Filter thumbnail, crop ratio item, brush control, undo/redo, cancel/apply action bar",
+      "Batch tile, selected-count header, processing state, per-item result, and summary",
+      "History item, settings group, dialog, banner-ad safe boundary, and token-limit state"
+    ],
+    "screens": [
+      "Home / empty-first photo entry",
+      "Home / recent-work variant",
+      "Enhance / photo picker",
+      "Enhance / selected original",
+      "Enhance / processing",
+      "Enhance / result with Before/After",
+      "Enhance / failure and retry",
+      "Editor / default Adjust",
+      "Editor / adjustment slider and reset",
+      "Editor / Retouch honest unavailable state",
+      "Remove / brush, restore, undo, redo, cancel, apply",
+      "Background / transparent, blur, solid, user-supplied replacement, cutout correction",
+      "Crop / free, ratios, rotate, flip, straighten, perspective-ready",
+      "Filters / Original, original preset placeholders, thumbnail strip, intensity",
+      "Compress / Target Size",
+      "Compress / Quality",
+      "Batch / empty",
+      "Batch / selected grid and common settings",
+      "Batch / processing and results",
+      "History / empty",
+      "History / populated",
+      "Settings / Appearance, Support, Legal, About",
+      "Coming Soon / honest unavailable feature",
+      "Ad-safe content boundaries"
+    ],
+    "prototypeFlows": [
+      "Home to photo picker to selected original to processing to result to Before/After to save/export",
+      "Home to Editor to contextual tool rail and bottom panel transitions",
+      "Home to Compress, Batch, History, and Settings with safe back behavior",
+      "Unavailable enhancement/editor action to honest Coming Soon state and back"
+    ],
+    "implementationBoundaries": [
+      "Home becomes photo-first and stops being a feature-card catalog.",
+      "New enhancement/editor UI uses honest states and never fabricates processed output.",
+      "Existing compression engine, Target Size, Quality, Batch processing, MAX_BATCH_ITEMS, Room History, Camera, Gallery, Save, Share, ads, token rules, applicationId, and signing assumptions remain protected.",
+      "Navigation is bridged through the current MainActivity state model with minimal risk; no wholesale navigation migration.",
+      "No new AI provider, network call, generated background, image generation, video, or fake transform is introduced."
+    ]
+  },
+  "blockers": [
+    {
+      "id": "FIGMA_MCP_STARTER_LIMIT",
+      "status": "active",
+      "detail": "The connected Figma MCP returned its Starter-plan tool-call quota error after file creation and discovery. The user also selected the Figma desktop application, which is the approved fallback path after Phase 0 approval."
+    }
+  ]
+}
